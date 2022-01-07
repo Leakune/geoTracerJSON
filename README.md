@@ -20,9 +20,11 @@ it, simply add the following line to your Podfile:
 pod 'geoTracerJSON'
 ```
 
-## Author
+## Authors
 
-Leakune, lfavier@live.fr
+Leakune,
+Lucc70,
+Raph
 
 ## License
 
