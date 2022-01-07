@@ -1,5 +1,5 @@
 PODS:
-  - geoTracerJSON (0.1.0)
+  - geoTracerJSON (0.0.1)
 
 DEPENDENCIES:
   - geoTracerJSON (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  geoTracerJSON: 9f26013970a6de52924d48222b481b55c8357bd1
+  geoTracerJSON: c958e68fccdad575ffc18ce4fbd21b784aafc6b1
 
 PODFILE CHECKSUM: 0a676aacef7372d411bbccf7379b8aafc5948b1b
 
