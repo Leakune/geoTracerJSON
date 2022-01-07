@@ -1,0 +1,6 @@
+framework module geoTracerJSON {
+  umbrella header "geoTracerJSON-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -28,11 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D58B656BFCBE48DFAE97C09 /* geoTracerJSON.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = geoTracerJSON.podspec; path = ../geoTracerJSON.podspec; sourceTree = "<group>"; };
+		0D58B656BFCBE48DFAE97C09 /* geoTracerJSON.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = geoTracerJSON.podspec; path = ../geoTracerJSON.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		16308692A3B0CF1C0F048D4C /* Pods-geoTracerJSON_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geoTracerJSON_Example.release.xcconfig"; path = "Target Support Files/Pods-geoTracerJSON_Example/Pods-geoTracerJSON_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2FAC5E203B2454DBEF8108A7 /* Pods-geoTracerJSON_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geoTracerJSON_Tests.release.xcconfig"; path = "Target Support Files/Pods-geoTracerJSON_Tests/Pods-geoTracerJSON_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		481205D0888784C976A81DBD /* Pods_geoTracerJSON_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_geoTracerJSON_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E18B6E898891B1A14C0EFE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5E18B6E898891B1A14C0EFE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* geoTracerJSON_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geoTracerJSON_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		8013D4F443D93A386E878BAD /* Pods-geoTracerJSON_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geoTracerJSON_Tests.debug.xcconfig"; path = "Target Support Files/Pods-geoTracerJSON_Tests/Pods-geoTracerJSON_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8343D01A5915953D2246CF61 /* Pods-geoTracerJSON_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geoTracerJSON_Example.debug.xcconfig"; path = "Target Support Files/Pods-geoTracerJSON_Example/Pods-geoTracerJSON_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		970B402A4E9BEC4F3B050584 /* Pods_geoTracerJSON_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_geoTracerJSON_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7EE775AF69C69DFC57B80BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B7EE775AF69C69DFC57B80BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				8013D4F443D93A386E878BAD /* Pods-geoTracerJSON_Tests.debug.xcconfig */,
 				2FAC5E203B2454DBEF8108A7 /* Pods-geoTracerJSON_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
