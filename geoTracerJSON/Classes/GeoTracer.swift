@@ -2,13 +2,15 @@ import Foundation
 import UIKit
 import MapKit
 
-class GeoTracer {
+public class GeoTracer {
     var map: MKMapView
-    var parse = Parse(map)
-    var draw = Draw(map)
+    var parse: Parse
+    var draw: Draw
     
     init(map: MKMapView) {
         self.map = map
+        parse = Parse(map: map)
+        draw = Draw(map: map)
     }
     
 }

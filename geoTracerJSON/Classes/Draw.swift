@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import MapKit
 
-private class Draw {
+class Draw {
     var map: MKMapView
     
     init(map: MKMapView) {
