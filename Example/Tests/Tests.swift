@@ -1,5 +1,4 @@
 import XCTest
-import geoTracerJSON
 
 class Tests: XCTestCase {
     

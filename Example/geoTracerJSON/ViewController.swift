@@ -10,55 +10,23 @@ import UIKit
 import geoTracerJSON
 import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate {
     
-    @IBOutlet weak var mainView: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let geotracer = GeoTracer()
+        let geotracer = GeoTracer(map: mapView)
+        let coordinate = CLLocationCoordinate2D(latitude: 48.655760,longitude: 2.333541)
+        geotracer.draw.circle(coord: coordinate, rad: 300000.0)
+        mapView.delegate = self
         
     }
-}
-
-extension ViewController: MKMapViewDelegate {
-
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-
-        if let polygon = overlay as? MKPolygon {
-
-            let renderer = MKPolygonRenderer(polygon: polygon)
-
-            renderer.fillColor = .red
-
-            renderer.strokeColor = .black
-
-            renderer.lineWidth = 1
-
-            renderer.alpha = 1.0
-
-            return renderer
-
+            let circleRenderer = MKCircleRenderer(overlay: overlay)
+            circleRenderer.strokeColor = UIColor.red
+            circleRenderer.lineWidth = 1.0
+            return circleRenderer
         }
-
-        else if let multiPolygon = overlay as? MKMultiPolygon {
-
-            let renderer = MKMultiPolygonRenderer(multiPolygon: multiPolygon)
-
-            renderer.fillColor = .red
-
-            renderer.strokeColor = .black
-
-            renderer.lineWidth = 1
-
-            renderer.alpha = 1.0
-
-            return renderer
-
-        }
-
-        return MKOverlayRenderer()
-
-    }
-
 }
+
+

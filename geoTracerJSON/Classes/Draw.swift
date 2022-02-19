@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-class Draw {
+public class Draw {
     var map: MKMapView
     
     init(map: MKMapView) {
@@ -18,7 +18,9 @@ class Draw {
     func square() -> Draw{
         return self
     }
-    func circle() -> Draw{
+    public func circle(coord: CLLocationCoordinate2D, rad: Double) -> Draw{
+        let circle = MKCircle(center: coord, radius: rad)
+        self.map.add(circle)
         return self
     }
     func point() -> Draw{

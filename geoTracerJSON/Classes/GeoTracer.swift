@@ -2,19 +2,31 @@ import Foundation
 import UIKit
 import MapKit
 
-public class GeoTracer {
-    var map: MKMapView
-    var parse: Parse
-    var draw: Draw
+public class GeoTracer: MKMapView, MKMapViewDelegate{
+    public var map: MKMapView
+    public var parse: Parse
+    public var draw: Draw
     
-    init(map: MKMapView) {
+    public init (map: MKMapView){
         self.map = map
-        parse = Parse(map: map)
-        draw = Draw(map: map)
+        self.parse = Parse(map: map)
+        self.draw = Draw(map: map)
+        
+        super.init(frame: CGRect(x: 0, y: 0, width: 1000, height: 1000))
+        self.map.delegate = self
+        
+        
     }
     
-}
-
-//var tracer = geoTracer(map: MyMap).parse.geoJson(path: <#T##String#>)
-//
-//tracer.draw.point().point()
+    
+    //RIP
+    public required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+            let circleRenderer = MKCircleRenderer(overlay: overlay)
+            circleRenderer.strokeColor = UIColor.red
+            circleRenderer.lineWidth = 1.0
+            return circleRenderer
+        }}

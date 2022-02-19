@@ -10,7 +10,7 @@ import MapKit
 import SwiftUI
 import UIKit
 
-class Parse {
+public class Parse {
 //    var path: String
     var map: MKMapView
     var decoder: MKGeoJSONDecoder
