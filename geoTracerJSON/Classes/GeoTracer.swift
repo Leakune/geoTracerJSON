@@ -6,15 +6,15 @@ public class GeoTracer: MKMapView, MKMapViewDelegate{
     public var map: MKMapView
     public var parse: Parse
     public var draw: Draw
-    
-    public init (map: MKMapView){
+    //public var mapViewController: UIViewController
+
+    public init (map: MKMapView /*, mapViewController: UIViewController*/){
         self.map = map
         self.parse = Parse(map: map)
         self.draw = Draw(map: map)
-        
+        //self.mapViewController = mapViewController
         super.init(frame: CGRect(x: 0, y: 0, width: 1000, height: 1000))
         self.map.delegate = self
-        
         
     }
     
@@ -24,9 +24,33 @@ public class GeoTracer: MKMapView, MKMapViewDelegate{
         fatalError("init(coder:) has not been implemented")
     }
     
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-            let circleRenderer = MKCircleRenderer(overlay: overlay)
-            circleRenderer.strokeColor = UIColor.red
-            circleRenderer.lineWidth = 1.0
-            return circleRenderer
-        }}
+//    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+//            let circleRenderer = MKCircleRenderer(overlay: overlay)
+//            circleRenderer.strokeColor = UIColor.red
+//            circleRenderer.lineWidth = 1.0
+//            return circleRenderer
+//        }
+    
+}
+
+//extension UIViewController: MKMapViewDelegate{
+//
+//    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+//        if overlay is MKCircle{
+//            let circleRenderer = MKCircleRenderer(overlay: overlay)
+//            circleRenderer.strokeColor = UIColor.red
+//            circleRenderer.lineWidth = 1.0
+//            return circleRenderer
+//        }else if overlay is MKPolygon{
+//            let circleRenderer = MKPolygonRenderer(overlay: overlay)
+//            circleRenderer.strokeColor = UIColor.red
+//            circleRenderer.lineWidth = 1.0
+//            return circleRenderer
+//
+//        }
+//        else{
+//            return MKOverlayRenderer()
+//        }
+//    }
+//
+//}

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43FD08DF27C13C460093164B /* polygon.json in Resources */ = {isa = PBXBuildFile; fileRef = 43FD08DE27C13C460093164B /* polygon.json */; };
+		43FD08E127C13FE80093164B /* point.json in Resources */ = {isa = PBXBuildFile; fileRef = 43FD08E027C13FE80093164B /* point.json */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		0D58B656BFCBE48DFAE97C09 /* geoTracerJSON.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = geoTracerJSON.podspec; path = ../geoTracerJSON.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		16308692A3B0CF1C0F048D4C /* Pods-geoTracerJSON_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geoTracerJSON_Example.release.xcconfig"; path = "Target Support Files/Pods-geoTracerJSON_Example/Pods-geoTracerJSON_Example.release.xcconfig"; sourceTree = "<group>"; };
+		43FD08DE27C13C460093164B /* polygon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = polygon.json; sourceTree = "<group>"; };
+		43FD08E027C13FE80093164B /* point.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = point.json; sourceTree = "<group>"; };
 		5E18B6E898891B1A14C0EFE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* geoTracerJSON_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geoTracerJSON_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				43FD08DE27C13C460093164B /* polygon.json */,
+				43FD08E027C13FE80093164B /* point.json */,
 			);
 			name = "Example for geoTracerJSON";
 			path = geoTracerJSON;
@@ -238,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				43FD08E127C13FE80093164B /* point.json in Resources */,
+				43FD08DF27C13C460093164B /* polygon.json in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
