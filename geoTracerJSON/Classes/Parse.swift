@@ -30,30 +30,22 @@ public class Parse {
         var data: Data = Data()
         do {
             data = try Data(contentsOf: URL(fileURLWithPath: path!), options: NSData.ReadingOptions.mappedIfSafe)
-         } catch {
+        } catch {
         }
-
         do {
             let objects = try decoder.decode(data)
-            
             for object in objects {
-
-                            if let feature = object as? MKGeoJSONFeature {
-
-                                if let polygon = feature.geometry.first as? MKPolygon {
-
-                                        polygon.title = "Title of Polygon"
-
-                                        overlays.append(polygon)
-
-                                }
-
-                            }
-
-                        }
-
+                if let feature = object as? MKGeoJSONFeature {
+                    if let polygon = feature.geometry.first as? MKPolygon {
+                            polygon.title = "Title of Polygon"
+                            overlays.append(polygon)
+                    }
+                    if let annotation = feature.geometry.first as? MKPointAnnotation{
+                        self.map.addAnnotation(annotation)
+                    }
+                }
+            }
         } catch (let error) {
-
         }
         
         //Parse the objects
@@ -86,5 +78,24 @@ public class Parse {
     func xml(path : String){
         // parse le fichier et dessine le sur la map
     }
+    
+//    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+//        if overlay is MKCircle{
+//            let circleRenderer = MKCircleRenderer(overlay: overlay)
+//            circleRenderer.strokeColor = UIColor.red
+//            circleRenderer.lineWidth = 1.0
+//            return circleRenderer
+//        }else if overlay is MKPolygon{
+//            let circleRenderer = MKPolygonRenderer(overlay: overlay)
+//            circleRenderer.strokeColor = UIColor.red
+//            circleRenderer.lineWidth = 1.0
+//            return circleRenderer
+//
+//        }
+//        else{
+//            return MKOverlayRenderer()
+//        }
+//    }
 }
+
 
