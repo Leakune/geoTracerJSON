@@ -10,7 +10,6 @@ import MapKit
 
 public class Draw {
     var map: MKMapView
-    
     init(map: MKMapView) {
         self.map = map
     }
@@ -56,8 +55,8 @@ public class Draw {
     }
     
     @discardableResult
-    public func circle(coord: CLLocationCoordinate2D, rad: Double) -> Draw{
-        let circle = MKCircle(center: coord, radius: rad)
+    public func circle(coord: Coordinate, rad: Double) -> Draw{
+        let circle = MKCircle(center: coord.toCLLocationCoordinate2D(), radius: rad)
         self.map.add(circle)
         return self
     }

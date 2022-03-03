@@ -11,61 +11,31 @@ import geoTracerJSON
 import MapKit
 
 
-class ViewController: UIViewController, MapViewControllerRepresentable {
+public class ViewController: UIViewController {
 //    var mapView: MKMapView
     
     
     @IBOutlet weak public var mapView: MKMapView!
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
-        let geotracer = GeoTracer<ViewController>(map: mapView , mapViewController: self )
-        let coordinate = CLLocationCoordinate2D(latitude: 48.655760,longitude: 2.333541)
-        geotracer.draw.circle(coord: coordinate, rad: 300000.0)
+        
+        let geotracer = GeoTracer(map: mapView)
+        self.mapView.delegate = geotracer
+        
+        let style = Style(lineWidth:2, lineColor: UIColor.blue, fillOpacity: 0.2)
+        let style2 = Style(lineWidth:3, lineColor: UIColor.green, fillOpacity: 0.6)
+        
+        geotracer.setStyle(style: style).draw.circle(coord: Coordinate(long: 2.333541, lat: 48.655760), rad: 300000.0)
         //geotracer.draw.rectangle(topLeft: Coordinate(long: 2.333541, lat: 48.655760), botRight: Coordinate(long: 3.333541, lat: 49.655760))
-        geotracer.draw.polyline(coords: [Coordinate(long: 2.333541, lat: 48.655760), Coordinate(long: 3.333541, lat: 49.655760), Coordinate(long: 5.333541, lat: 48.655760)])
+        geotracer.setStyle(style: style2).draw.polyline(coords: [Coordinate(long: 2.333541, lat: 48.655760), Coordinate(long: 3.333541, lat: 49.655760), Coordinate(long: 5.333541, lat: 48.655760)])
         geotracer.draw.line(p1: Coordinate(long: 1, lat: 45), p2: Coordinate(long: 2, lat: 48))
         geotracer.parse.geoJson(fileName: "polygon.json").geoJson(fileName: "point.json")
-        self.mapView.delegate = self
+        geotracer.draw.point(coord: Coordinate(long: 2.333541, lat: 48.655760), title: "Point")
+        
         
         
     }
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        if overlay is MKCircle{
-            let circleRenderer = MKCircleRenderer(overlay: overlay)
-            circleRenderer.strokeColor = UIColor.red
-            circleRenderer.lineWidth = 1.0
-            return circleRenderer
-        }else if overlay is MKPolygon{
-            let polygonRenderer = MKPolygonRenderer(overlay: overlay)
-            polygonRenderer.strokeColor = UIColor.red
-            polygonRenderer.lineWidth = 1.0
-            return polygonRenderer
-        }else if overlay is MKPolyline{
-            let polylineRenderer = MKPolylineRenderer(overlay: overlay)
-            polylineRenderer.strokeColor = UIColor.red
-            polylineRenderer.lineWidth = 1.0
-            return polylineRenderer
-        }
-        
-        else{
-            return MKOverlayRenderer()
-        }
-    }
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard annotation is MKPointAnnotation else { return nil }
-
-        let identifier = "Annotation"
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-
-        if annotationView == nil {
-            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            annotationView!.canShowCallout = true
-        } else {
-            annotationView!.annotation = annotation
-        }
-
-        return annotationView
-    }
+    
 
 }
 
