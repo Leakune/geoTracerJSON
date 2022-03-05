@@ -69,45 +69,7 @@ public class Draw {
         self.map.addAnnotation(point)
         return self
     }
-    
-//    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-//        if overlay is MKCircle{
-//            let circleRenderer = MKCircleRenderer(overlay: overlay)
-//            circleRenderer.strokeColor = UIColor.red
-//            circleRenderer.lineWidth = 1.0
-//            return circleRenderer
-//        }else if overlay is MKPolygon{
-//            let circleRenderer = MKPolygonRenderer(overlay: overlay)
-//            circleRenderer.strokeColor = UIColor.red
-//            circleRenderer.lineWidth = 1.0
-//            return circleRenderer
-//
-//        }
-//        else{
-//            return MKOverlayRenderer()
-//        }
-//    }
+
 }
 
-//extension UIViewController: MKMapViewDelegate{
-//
-//    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-//        if overlay is MKCircle{
-//            let circleRenderer = MKCircleRenderer(overlay: overlay)
-//            circleRenderer.strokeColor = UIColor.red
-//            circleRenderer.lineWidth = 1.0
-//            return circleRenderer
-//        }else if overlay is MKPolygon{
-//            let circleRenderer = MKPolygonRenderer(overlay: overlay)
-//            circleRenderer.strokeColor = UIColor.red
-//            circleRenderer.lineWidth = 1.0
-//            return circleRenderer
-//
-//        }
-//        else{
-//            return MKOverlayRenderer()
-//        }
-//    }
-//
-//}
 

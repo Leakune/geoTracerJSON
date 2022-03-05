@@ -20,7 +20,7 @@ public class Style {
     }
     
     
-    public init(lineWidth: Float = 1.0, lineColor: UIColor = UIColor.red, lineOpacity: Float = 1, fillColor: UIColor = UIColor.red, fillOpacity: Float = 1){
+    public init(lineWidth: Float = 1.0, lineColor: UIColor = UIColor.red, lineOpacity: Float = 1.0, fillColor: UIColor = UIColor.red, fillOpacity: Float = 0.0){
         self.lineWidth = lineWidth
         self.lineColor = lineColor
         self.lineOpacity = lineOpacity
@@ -29,14 +29,10 @@ public class Style {
     }
     
     public func setDefautStyle(){
-        print("ici2")
-        print(description)
         self.lineWidth = 1.0
         self.lineColor = UIColor.red
-        self.lineOpacity = 1
+        self.lineOpacity = 1.0
         self.fillColor = UIColor.red
-        self.fillOpacity = 1
-        print("ici3")
-        print(description)
+        self.fillOpacity = 0.0
     }
 }

@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		049AEE86EE3F3E298B3294E8006FBA2C /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB586B2CA4B623F73A7135BC246844 /* Draw.swift */; };
-		177CCFC04275B85836E0A747730FDE1F /* geoTracerJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 753D67F034A56EB4F6A81FC4D354D2DC /* geoTracerJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22EC395374C52D7F8658D158832DC21A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		4333746627D1545E00414745 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333746527D1545E00414745 /* Style.swift */; };
-		A9AC6D266A31906CBD2AE31DAD809616 /* geoTracerJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 706B6639B72C04EAF4F917E526E88C29 /* geoTracerJSON-dummy.m */; };
+		007CDA14FC08F34CC2B5EC8B50B64B3F /* geoTracerJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E93F114D4B4EC70A9497B400897E4C /* geoTracerJSON-dummy.m */; };
+		1B61296FAF84202D47575F0A4D56668C /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE2BCE3249B9BC2663AD26C6C1974F /* Parse.swift */; };
+		1BD9244F3A3114CD23DC5443B353AED2 /* geoTracerJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBEEA88B6B743D960B472A08D2AAFC6F /* geoTracerJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E2FE1E7F7E2104A2310497FED2835F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8064FC6E56D0DDD8F1FB2A9675D28311 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FCAD0C97B60D3C03B50148D3CAFB2 /* Style.swift */; };
+		ADEFD9862562614DF36D8D0CDCCA8F7D /* GeoTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B496984A50FB88EEE16BD383690623 /* GeoTracer.swift */; };
 		B5E023FD2170845BEB9B37A6E8370699 /* Pods-geoTracerJSON_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5EDB8A0E961EC7BEBCB2B47A230420 /* Pods-geoTracerJSON_Example-dummy.m */; };
-		B69CBC81AE5E797940FF419AB6E05D4C /* GeoTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A978172876F8A34E06E3EB589BCB78F /* GeoTracer.swift */; };
-		BC9FF7A9914C068F30DB3A09AFAAD3B8 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB5D69EF04559CEDFCFBB641D5D2CA /* Coordinate.swift */; };
 		C2375EC111617334A4C5340AE8179E3B /* Pods-geoTracerJSON_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78CC40335030985753F51AD1086545FA /* Pods-geoTracerJSON_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D63C693D18368CAEC5F2B7515701DE0B /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8572D2211FC08C49B5C9895F3DBBF5B /* Parse.swift */; };
+		C4EF88EEDDC6DE423FDCF703361BBD77 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BCF72964D869AEA205874F4929ADF7 /* Draw.swift */; };
+		D5DB7237C769D83D87970CA42D7FBB0C /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37352B0B976E6E85630A927192A3380 /* Coordinate.swift */; };
 		E1EAC97FE30F23D3C40969D75AE1AD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EA32BE3721422ECB9064EE7B682E83F4 /* PBXContainerItemProxy */ = {
+		33216E4EBC6DA7A128D16932ACC187B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -32,41 +32,41 @@
 
 /* Begin PBXFileReference section */
 		018C0EE8E8D03D9C84555E62A4A9F26C /* Pods-geoTracerJSON_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-geoTracerJSON_Example.release.xcconfig"; sourceTree = "<group>"; };
-		049176D79A352BAAC81DCC24257F18D4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		09B0778B6A30DB1A5F4E5E3A43216A60 /* geoTracerJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = geoTracerJSON.release.xcconfig; sourceTree = "<group>"; };
-		1564D3316C8D384188FA5ABD628405B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		09B496984A50FB88EEE16BD383690623 /* GeoTracer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoTracer.swift; path = geoTracerJSON/Classes/GeoTracer.swift; sourceTree = "<group>"; };
+		19E93F114D4B4EC70A9497B400897E4C /* geoTracerJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "geoTracerJSON-dummy.m"; sourceTree = "<group>"; };
+		1CA7ECD920FA3CB8A3164B69A40F45F2 /* geoTracerJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = geoTracerJSON.modulemap; sourceTree = "<group>"; };
 		34DF06C7C894D28B514A28BF826B38D6 /* Pods-geoTracerJSON_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-geoTracerJSON_Example.modulemap"; sourceTree = "<group>"; };
-		4333746527D1545E00414745 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
-		48E1C18C0F55ACDDAC0FEE935AAA043D /* geoTracerJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "geoTracerJSON-Info.plist"; sourceTree = "<group>"; };
-		54FB5D69EF04559CEDFCFBB641D5D2CA /* Coordinate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coordinate.swift; path = geoTracerJSON/Classes/Coordinate.swift; sourceTree = "<group>"; };
-		5A978172876F8A34E06E3EB589BCB78F /* GeoTracer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoTracer.swift; path = geoTracerJSON/Classes/GeoTracer.swift; sourceTree = "<group>"; };
+		42BCF72964D869AEA205874F4929ADF7 /* Draw.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Draw.swift; path = geoTracerJSON/Classes/Draw.swift; sourceTree = "<group>"; };
+		55AEEA5D92C1BD4FEE42D983AB99F492 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		5F87E71391E678FCA8B522886E71EAD7 /* Pods-geoTracerJSON_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-geoTracerJSON_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		6A1900771539FE236214485B61E9D860 /* Pods-geoTracerJSON_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-geoTracerJSON_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6D5EDB8A0E961EC7BEBCB2B47A230420 /* Pods-geoTracerJSON_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-geoTracerJSON_Example-dummy.m"; sourceTree = "<group>"; };
-		706B6639B72C04EAF4F917E526E88C29 /* geoTracerJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "geoTracerJSON-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		753D67F034A56EB4F6A81FC4D354D2DC /* geoTracerJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "geoTracerJSON-umbrella.h"; sourceTree = "<group>"; };
+		747D51FA597D7BF04C83A72883F0E53A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		78CC40335030985753F51AD1086545FA /* Pods-geoTracerJSON_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-geoTracerJSON_Example-umbrella.h"; sourceTree = "<group>"; };
 		7AB2181364F1F9120318312F7B067E7A /* Pods-geoTracerJSON_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-geoTracerJSON_Example-Info.plist"; sourceTree = "<group>"; };
-		7DCB586B2CA4B623F73A7135BC246844 /* Draw.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Draw.swift; path = geoTracerJSON/Classes/Draw.swift; sourceTree = "<group>"; };
-		815BDFAC09C48B5FD0F02C17F3841B2A /* geoTracerJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = geoTracerJSON.modulemap; sourceTree = "<group>"; };
+		830FCAD0C97B60D3C03B50148D3CAFB2 /* Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Style.swift; path = geoTracerJSON/Classes/Style.swift; sourceTree = "<group>"; };
 		8D31C53E262492E01A22A1974A43B76D /* Pods-geoTracerJSON_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-geoTracerJSON_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8EFE2BCE3249B9BC2663AD26C6C1974F /* Parse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parse.swift; path = geoTracerJSON/Classes/Parse.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F946A775E5AFCA2A240551E14410015 /* Pods-geoTracerJSON_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-geoTracerJSON_Example-frameworks.sh"; sourceTree = "<group>"; };
-		A08E5522FCAF1EA76B14E59F33E22CC8 /* geoTracerJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "geoTracerJSON-prefix.pch"; sourceTree = "<group>"; };
-		A6703CDC8C7B88BE81E661641D1D4923 /* geoTracerJSON.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = geoTracerJSON.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B5EEFC5F489364DA44737D339BC1FA2A /* geoTracerJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "geoTracerJSON-prefix.pch"; sourceTree = "<group>"; };
+		BBEEA88B6B743D960B472A08D2AAFC6F /* geoTracerJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "geoTracerJSON-umbrella.h"; sourceTree = "<group>"; };
 		BDC08E492D24EE188509EC24C2EBCA23 /* Pods-geoTracerJSON_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-geoTracerJSON_Example"; path = Pods_geoTracerJSON_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04360D72D87E8E5595DD24CD5C596B1 /* geoTracerJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = geoTracerJSON; path = geoTracerJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8572D2211FC08C49B5C9895F3DBBF5B /* Parse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parse.swift; path = geoTracerJSON/Classes/Parse.swift; sourceTree = "<group>"; };
-		E75BCF722E37F915066C7297D4BDC423 /* geoTracerJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = geoTracerJSON.debug.xcconfig; sourceTree = "<group>"; };
+		C240E7129E147AE9BC52589FAF7649EC /* geoTracerJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = geoTracerJSON.release.xcconfig; sourceTree = "<group>"; };
+		E37352B0B976E6E85630A927192A3380 /* Coordinate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coordinate.swift; path = geoTracerJSON/Classes/Coordinate.swift; sourceTree = "<group>"; };
+		EEF9BBBFF79BF99B6432F8F0806A8BB1 /* geoTracerJSON.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = geoTracerJSON.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F404B9D06022366327235F5956CA978A /* geoTracerJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = geoTracerJSON.debug.xcconfig; sourceTree = "<group>"; };
+		FE16552D8000C930C9DA12F1D2FC6E9C /* geoTracerJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "geoTracerJSON-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		63ED3C640B02E87F1C7E3BF4BBB7AA3D /* Frameworks */ = {
+		869388EE607995E1891701FD0368EF51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22EC395374C52D7F8658D158832DC21A /* Foundation.framework in Frameworks */,
+				6E2FE1E7F7E2104A2310497FED2835F8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +81,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38750728924A4652ECF84C4C3A64D882 /* geoTracerJSON */ = {
+			isa = PBXGroup;
+			children = (
+				E37352B0B976E6E85630A927192A3380 /* Coordinate.swift */,
+				42BCF72964D869AEA205874F4929ADF7 /* Draw.swift */,
+				09B496984A50FB88EEE16BD383690623 /* GeoTracer.swift */,
+				8EFE2BCE3249B9BC2663AD26C6C1974F /* Parse.swift */,
+				830FCAD0C97B60D3C03B50148D3CAFB2 /* Style.swift */,
+				DC7D045CB5D006E9D4EC23D79F767BB0 /* Pod */,
+				3B78AA1B572C82E4D0EFEADBA0E09989 /* Support Files */,
+			);
+			name = geoTracerJSON;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3B78AA1B572C82E4D0EFEADBA0E09989 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CA7ECD920FA3CB8A3164B69A40F45F2 /* geoTracerJSON.modulemap */,
+				19E93F114D4B4EC70A9497B400897E4C /* geoTracerJSON-dummy.m */,
+				FE16552D8000C930C9DA12F1D2FC6E9C /* geoTracerJSON-Info.plist */,
+				B5EEFC5F489364DA44737D339BC1FA2A /* geoTracerJSON-prefix.pch */,
+				BBEEA88B6B743D960B472A08D2AAFC6F /* geoTracerJSON-umbrella.h */,
+				F404B9D06022366327235F5956CA978A /* geoTracerJSON.debug.xcconfig */,
+				C240E7129E147AE9BC52589FAF7649EC /* geoTracerJSON.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/geoTracerJSON";
+			sourceTree = "<group>";
+		};
 		512E181DCA7421E5887D16CCF3DEB4FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,36 +128,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		9DD305FEB873A92BB8FCAA67585F9672 /* Pod */ = {
+		A94BAED7C64C0B4322ADFAA581E021A5 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A6703CDC8C7B88BE81E661641D1D4923 /* geoTracerJSON.podspec */,
-				1564D3316C8D384188FA5ABD628405B6 /* LICENSE */,
-				049176D79A352BAAC81DCC24257F18D4 /* README.md */,
+				38750728924A4652ECF84C4C3A64D882 /* geoTracerJSON */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		B7D650CA11875E9897F0FAD7C6E9F3F1 /* geoTracerJSON */ = {
-			isa = PBXGroup;
-			children = (
-				54FB5D69EF04559CEDFCFBB641D5D2CA /* Coordinate.swift */,
-				7DCB586B2CA4B623F73A7135BC246844 /* Draw.swift */,
-				4333746527D1545E00414745 /* Style.swift */,
-				5A978172876F8A34E06E3EB589BCB78F /* GeoTracer.swift */,
-				C8572D2211FC08C49B5C9895F3DBBF5B /* Parse.swift */,
-				9DD305FEB873A92BB8FCAA67585F9672 /* Pod */,
-				FAE56178D177C74B31A7A2B9AEC33300 /* Support Files */,
-			);
-			name = geoTracerJSON;
-			path = ../..;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				FE9E1FF661E4A489920CB47E7C60AF14 /* Development Pods */,
+				A94BAED7C64C0B4322ADFAA581E021A5 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				512E181DCA7421E5887D16CCF3DEB4FD /* Products */,
 				E1D2CC08C519E18510A53F0BCA48C7B6 /* Targets Support Files */,
@@ -140,6 +153,16 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC7D045CB5D006E9D4EC23D79F767BB0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EEF9BBBFF79BF99B6432F8F0806A8BB1 /* geoTracerJSON.podspec */,
+				747D51FA597D7BF04C83A72883F0E53A /* LICENSE */,
+				55AEEA5D92C1BD4FEE42D983AB99F492 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		E1D2CC08C519E18510A53F0BCA48C7B6 /* Targets Support Files */ = {
@@ -167,45 +190,22 @@
 			path = "Target Support Files/Pods-geoTracerJSON_Example";
 			sourceTree = "<group>";
 		};
-		FAE56178D177C74B31A7A2B9AEC33300 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				815BDFAC09C48B5FD0F02C17F3841B2A /* geoTracerJSON.modulemap */,
-				706B6639B72C04EAF4F917E526E88C29 /* geoTracerJSON-dummy.m */,
-				48E1C18C0F55ACDDAC0FEE935AAA043D /* geoTracerJSON-Info.plist */,
-				A08E5522FCAF1EA76B14E59F33E22CC8 /* geoTracerJSON-prefix.pch */,
-				753D67F034A56EB4F6A81FC4D354D2DC /* geoTracerJSON-umbrella.h */,
-				E75BCF722E37F915066C7297D4BDC423 /* geoTracerJSON.debug.xcconfig */,
-				09B0778B6A30DB1A5F4E5E3A43216A60 /* geoTracerJSON.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/geoTracerJSON";
-			sourceTree = "<group>";
-		};
-		FE9E1FF661E4A489920CB47E7C60AF14 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B7D650CA11875E9897F0FAD7C6E9F3F1 /* geoTracerJSON */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		97140DF50361C3A9E7A9D9DFCF43E366 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				177CCFC04275B85836E0A747730FDE1F /* geoTracerJSON-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D77D7D7B2E2D5EC0DA5C3864A1269E0A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C2375EC111617334A4C5340AE8179E3B /* Pods-geoTracerJSON_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D940BE65EC35CBC19E4A0E44CD43EAC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD9244F3A3114CD23DC5443B353AED2 /* geoTracerJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +224,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				66EF619B79C26A4C720B189F3AB6599A /* PBXTargetDependency */,
+				C1702A5DF4D5B887C21B4E3227E916F6 /* PBXTargetDependency */,
 			);
 			name = "Pods-geoTracerJSON_Example";
 			productName = Pods_geoTracerJSON_Example;
@@ -233,12 +233,12 @@
 		};
 		E1F6A8530BCFA58AB9D226C3121CDD18 /* geoTracerJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C418F6D5B486B413D0C365FA30F837C /* Build configuration list for PBXNativeTarget "geoTracerJSON" */;
+			buildConfigurationList = 9F392B02DCF0DE3C6F6BBBBEEE0C42B9 /* Build configuration list for PBXNativeTarget "geoTracerJSON" */;
 			buildPhases = (
-				97140DF50361C3A9E7A9D9DFCF43E366 /* Headers */,
-				038BE86227CE3E69184D559226993264 /* Sources */,
-				63ED3C640B02E87F1C7E3BF4BBB7AA3D /* Frameworks */,
-				C141A5DA56B8C924BA861CA8A8F87859 /* Resources */,
+				D940BE65EC35CBC19E4A0E44CD43EAC6 /* Headers */,
+				3365B48BC094B3EFB82C510ADD3C6454 /* Sources */,
+				869388EE607995E1891701FD0368EF51 /* Frameworks */,
+				DA2DB09CFD1F8B5AE9247E30CA85975B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -285,7 +285,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C141A5DA56B8C924BA861CA8A8F87859 /* Resources */ = {
+		DA2DB09CFD1F8B5AE9247E30CA85975B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,19 +295,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		038BE86227CE3E69184D559226993264 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BC9FF7A9914C068F30DB3A09AFAAD3B8 /* Coordinate.swift in Sources */,
-				4333746627D1545E00414745 /* Style.swift in Sources */,
-				049AEE86EE3F3E298B3294E8006FBA2C /* Draw.swift in Sources */,
-				B69CBC81AE5E797940FF419AB6E05D4C /* GeoTracer.swift in Sources */,
-				A9AC6D266A31906CBD2AE31DAD809616 /* geoTracerJSON-dummy.m in Sources */,
-				D63C693D18368CAEC5F2B7515701DE0B /* Parse.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0B87C0686B952A4BFB933AD5D1AFC5E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,21 +303,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3365B48BC094B3EFB82C510ADD3C6454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DB7237C769D83D87970CA42D7FBB0C /* Coordinate.swift in Sources */,
+				C4EF88EEDDC6DE423FDCF703361BBD77 /* Draw.swift in Sources */,
+				ADEFD9862562614DF36D8D0CDCCA8F7D /* GeoTracer.swift in Sources */,
+				007CDA14FC08F34CC2B5EC8B50B64B3F /* geoTracerJSON-dummy.m in Sources */,
+				1B61296FAF84202D47575F0A4D56668C /* Parse.swift in Sources */,
+				8064FC6E56D0DDD8F1FB2A9675D28311 /* Style.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		66EF619B79C26A4C720B189F3AB6599A /* PBXTargetDependency */ = {
+		C1702A5DF4D5B887C21B4E3227E916F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = geoTracerJSON;
 			target = E1F6A8530BCFA58AB9D226C3121CDD18 /* geoTracerJSON */;
-			targetProxy = EA32BE3721422ECB9064EE7B682E83F4 /* PBXContainerItemProxy */;
+			targetProxy = 33216E4EBC6DA7A128D16932ACC187B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4AA3C60EFEC8E3D6E24AD7F9E6FA9BAA /* Release */ = {
+		4ABB7F0464ED3332287CD4C89CEAAF05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09B0778B6A30DB1A5F4E5E3A43216A60 /* geoTracerJSON.release.xcconfig */;
+			baseConfigurationReference = C240E7129E147AE9BC52589FAF7649EC /* geoTracerJSON.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -496,38 +496,6 @@
 			};
 			name = Debug;
 		};
-		9B525B53D2CC1FB4A78AE07873EE5375 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E75BCF722E37F915066C7297D4BDC423 /* geoTracerJSON.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/geoTracerJSON/geoTracerJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/geoTracerJSON/geoTracerJSON-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/geoTracerJSON/geoTracerJSON.modulemap";
-				PRODUCT_MODULE_NAME = geoTracerJSON;
-				PRODUCT_NAME = geoTracerJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -583,29 +551,62 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
+		B17A3F7BB14F9D76EA519FB6459CBF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F404B9D06022366327235F5956CA978A /* geoTracerJSON.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/geoTracerJSON/geoTracerJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/geoTracerJSON/geoTracerJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/geoTracerJSON/geoTracerJSON.modulemap";
+				PRODUCT_MODULE_NAME = geoTracerJSON;
+				PRODUCT_NAME = geoTracerJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1C418F6D5B486B413D0C365FA30F837C /* Build configuration list for PBXNativeTarget "geoTracerJSON" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9B525B53D2CC1FB4A78AE07873EE5375 /* Debug */,
-				4AA3C60EFEC8E3D6E24AD7F9E6FA9BAA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
 				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F392B02DCF0DE3C6F6BBBBEEE0C42B9 /* Build configuration list for PBXNativeTarget "geoTracerJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17A3F7BB14F9D76EA519FB6459CBF7E /* Debug */,
+				4ABB7F0464ED3332287CD4C89CEAAF05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

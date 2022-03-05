@@ -12,8 +12,6 @@ import MapKit
 
 
 public class ViewController: UIViewController {
-//    var mapView: MKMapView
-    
     
     @IBOutlet weak public var mapView: MKMapView!
     public override func viewDidLoad() {
@@ -26,7 +24,7 @@ public class ViewController: UIViewController {
         let style2 = Style(lineWidth:3, lineColor: UIColor.green, fillOpacity: 0.6)
         
         geotracer.setStyle(style: style).draw.circle(coord: Coordinate(long: 2.333541, lat: 48.655760), rad: 300000.0)
-        //geotracer.draw.rectangle(topLeft: Coordinate(long: 2.333541, lat: 48.655760), botRight: Coordinate(long: 3.333541, lat: 49.655760))
+        geotracer.draw.rectangle(topLeft: Coordinate(long: 2.333541, lat: 48.655760), botRight: Coordinate(long: 3.333541, lat: 49.655760))
         geotracer.setStyle(style: style2).draw.polyline(coords: [Coordinate(long: 2.333541, lat: 48.655760), Coordinate(long: 3.333541, lat: 49.655760), Coordinate(long: 5.333541, lat: 48.655760)])
         geotracer.draw.line(p1: Coordinate(long: 1, lat: 45), p2: Coordinate(long: 2, lat: 48))
         geotracer.parse.geoJson(fileName: "polygon.json").geoJson(fileName: "point.json")

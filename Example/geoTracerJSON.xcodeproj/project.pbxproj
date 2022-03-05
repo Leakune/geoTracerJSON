@@ -41,7 +41,6 @@
 /* Begin PBXFileReference section */
 		0D58B656BFCBE48DFAE97C09 /* geoTracerJSON.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = geoTracerJSON.podspec; path = ../geoTracerJSON.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		16308692A3B0CF1C0F048D4C /* Pods-geoTracerJSON_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geoTracerJSON_Example.release.xcconfig"; path = "Target Support Files/Pods-geoTracerJSON_Example/Pods-geoTracerJSON_Example.release.xcconfig"; sourceTree = "<group>"; };
-		43ED6ACE27D001DB00C1FE18 /* gpx.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = gpx.gpx; sourceTree = "<group>"; };
 		43ED6AD227D0107000C1FE18 /* UITest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITest2.swift; sourceTree = "<group>"; };
 		43ED6AD827D016A400C1FE18 /* UITest3.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITest3.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43ED6ADA27D016A400C1FE18 /* UITest3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITest3.swift; sourceTree = "<group>"; };
@@ -151,7 +150,6 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
-				43ED6ACE27D001DB00C1FE18 /* gpx.gpx */,
 				43ED6AD227D0107000C1FE18 /* UITest2.swift */,
 			);
 			path = Tests;

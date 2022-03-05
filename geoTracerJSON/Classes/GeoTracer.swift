@@ -3,13 +3,11 @@ import UIKit
 import MapKit
 
 public class GeoTracer: MKMapView, MKMapViewDelegate{
-    //public var map: MKMapView
     public var parse: Parse
     public var draw: Draw
     public var style: Style = Style()
 
     public init (map: MKMapView ){
-        //self.map = map
         self.parse = Parse(map: map)
         self.draw = Draw(map: map)
         super.init(frame: CGRect(x: 0, y: 0, width: 1000, height: 1000))
