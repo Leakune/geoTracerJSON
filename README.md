@@ -188,7 +188,7 @@ public class ViewController: UIViewController {
 
 ### Stylizing your shapes
 
-You can stylize your shapes by defining an instance of our class Style and by using the setStyle() function of Geotracer:
+You can style your shapes by defining an instance of our class Style and by using the setStyle() function of Geotracer:
 
 ```swift
 import geoTracerJSON
