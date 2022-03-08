@@ -16,15 +16,13 @@ public class Draw {
     
     @discardableResult
     public func rectangle(topLeft: Coordinate, botRight: Coordinate) -> Draw{
-        let pTopLeft = CLLocation(latitude: topLeft.lat, longitude: topLeft.long)
-        let pTopRight = CLLocation(latitude: topLeft.lat, longitude: botRight.long)
-        let pBotLeft = CLLocation(latitude: botRight.lat, longitude: topLeft.long)
-        let pBotRight = CLLocation(latitude: botRight.lat, longitude: botRight.long)
+        let pTopLeft = CLLocationCoordinate2D(latitude: topLeft.lat, longitude: topLeft.long)
+        let pTopRight = CLLocationCoordinate2D(latitude: topLeft.lat, longitude: botRight.long)
+        let pBotLeft = CLLocationCoordinate2D(latitude: botRight.lat, longitude: topLeft.long)
+        let pBotRight = CLLocationCoordinate2D(latitude: botRight.lat, longitude: botRight.long)
         let locationCoordinates = [pTopLeft,pTopRight,pBotRight,pBotLeft]
 
-        let coordinates = locationCoordinates.map { $0.coordinate }
-
-        let polygone = MKPolygon(coordinates: coordinates, count: coordinates.count)
+        let polygone = MKPolygon(coordinates: locationCoordinates, count: locationCoordinates.count)
         self.map.add(polygone)
         return self
     }
@@ -32,7 +30,6 @@ public class Draw {
     @discardableResult
     public func polygon(coords: [Coordinate]) -> Draw{
         let coordinates = coords.map { $0.toCLLocationCoordinate2D() }
-        print(coordinates)
         let polygone = MKPolygon(coordinates: coordinates, count: coordinates.count)
         self.map.add(polygone)
         return self
